@@ -9,4 +9,4 @@
   <%= @book.body %>
 </p>
 
-<a href="#">Edit</a> <span>|</span><%= link_to 'Back', books_path %>
+<%= link_to 'Edit', edit_book_path(@book) %>  <span>|</span> <%= link_to 'Back', books_path %>
