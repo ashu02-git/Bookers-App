@@ -9,4 +9,6 @@
   <%= @book.body %>
 </p>
 
-<%= link_to 'Edit', edit_book_path(@book) %>  <span>|</span> <%= link_to 'Back', books_path %>
+<%= link_to 'Edit', edit_book_path(@book), :style=>"color:#7f7f7f;" %>
+<span>|</span>
+<%= link_to 'Back', books_path,:style=>"color:#7f7f7f;" %>
