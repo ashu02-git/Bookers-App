@@ -13,11 +13,6 @@
  *= require_tree .
  *= require_self
  */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box:
-}
 
 body {
   background-color: #fff;
@@ -31,27 +26,27 @@ body {
 h1 {
   display: block;
   font-size: 2em;
+  margin-bottom: 18px;
 }
 
-.intro {
-  font-family: verdana;
-  font-size: 13px;
-  line-height: 18px;
-  margin: 33px;
+p, ul {
+    font-family: verdana, helvetica;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 33px;
 }
+
+/*indexのCSS*/
 
 .bookers {
   font-weight   : bold;
 }
 
-.books {
-  margin-bottom: 18px;
-}
+/*一覧部分のCSS*/
 
 table {
     display: table;
     border-collapse: separate;
-    box-sizing: border-box;
     border-spacing: 2px;
     border-color: grey;
 }
@@ -71,6 +66,7 @@ h2 {
   margin: 16px 0;
 }
 
+/*エラーメッセージのCSS*/
 .alert {
     width: 450px;
     border: 2px solid red;
@@ -91,9 +87,17 @@ h2 {
   color: #fff;
 }
 
-.alert_item {
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
-  line-height: 18px;
-  margin: 33px;
+/*　editビューCSS　*/
+.form {
+  display: block;
+}
+
+.field, .action {
+  margin-bottom: 10px;
+}
+
+/* showビューCSS */
+
+#notice {
+  color: green;
 }
